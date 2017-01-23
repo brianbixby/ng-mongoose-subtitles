@@ -99,14 +99,14 @@ function ScriptService($http) {
             line2: "-From Fulda."
           }
         ]
-      }
+      };
 	  },
 
     createScript: function(templateId) {
 	    var req = {
 	      url: '/movie/create/script/' + templateId,
 	      method: 'POST'
-	    }
+	    };
 	    return $http(req);
 	  },
 
@@ -114,11 +114,11 @@ function ScriptService($http) {
 	    var req = {
 	      url: '/movie/edit/script/' + index,
 	      method: 'PUT'
-	    }
+	    };
 	    return $http(req);
 	  }
 
-	}
+	};
 }
 
 ScriptService.$inject = ['$http'];
